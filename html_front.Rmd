@@ -1,0 +1,5 @@
+# Front Matter {-}
+
+Draft of a book in progress defending interest-relative theories in epistemology. A few of the sections, and 3 of the chapters, are not done. But hopefully it is interesting enough to share.
+
+The view is somewhat customisable using the toolbar above. You can change the font type, the font size, and the background color. You can also search the book.

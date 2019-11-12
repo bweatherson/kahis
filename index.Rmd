@@ -1,0 +1,46 @@
+--- 
+title: "Knowledge"
+subtitle: "A Human Interest Story"
+author: "Brian Weatherson"
+date: \today
+site: bookdown::bookdown_site
+documentclass: book
+geometry: "left=1.95in,right=1.95in,top=1.78in,bottom=1.78in"
+mainfont: SF Pro Text Light
+mainfontoptions: BoldFont = SF Pro Text Semibold
+fontsize: 11pt
+indent: true
+output: 
+  bookdown::pdf_book:
+    keep_tex: yes
+  bookdown::gitbook:
+    md_extensions: +example_lists+fancy_lists+startnum+line_blocks
+    split_bib: no
+#    includes:
+#      after_body: disqus.html
+    number_sections: yes
+    split_by: chapter
+    config:
+      fontsettings:
+        theme: sepia
+        family: sans
+        size: 2
+      toc:
+        collapse: section
+        before: |
+          <li><a href="kahis.html">Knowledge: A Human Interest Story</a></li>
+        after: |
+          <li><a href="https://bookdown.org" target="_blank">Made with bookdown</a></li>
+url: 'https\://brian.weatherson.org/kahis/'
+cover-image: "tree.jpg"
+bibliography: "../OldPapers/CollBib.bib"
+biblio-style: philreview
+link-citations: yes
+description: "A defence of an interest-relative theory of knowledge"
+---
+
+# Front Matter {-}
+
+Draft of a book in progress defending interest-relative theories in epistemology. A few of the sections, and 3 of the chapters, are not done. But hopefully it is interesting enough to share.
+
+The view is somewhat customisable using the toolbar above. You can change the font type, the font size, and the background color. I think it looks best with a sans serif font and a sepia background, but ymmv. You can also search the book.

@@ -1,0 +1,29 @@
+## Odds and Stakes {#oddsandstakes}
+
+If orthodox views are wrong, then it is important to get clear on which heterodox view is most plausible.^[This section is based on §3 of my -@Weatherson2016.] I'm defending a version of the pragmatic view. But it's a different version to the most prominent versions defended in the literature. The difference can be most readily seen by looking at the class of cases that have motivated pragmatic views.
+
+The cases involve a subject making a practical decision. The subject has a safe choice, which has a guaranteed return of $S$. And they have a risky choice. If things go well, the return of the risky choice is $S + G$, so they will gain $G$ from taking the risk. If things go badly, the return of the risky choice is $S - L$, so they will lose $L$ from taking the risk. What it takes for things to go well is that a particular proposition $p$ is true. All of this is known by the subject facing the choice. What the subject doesn't (uncontroversially) know is that they satisfy all the conditions for knowing $p$ that would have been endorsed by a well-informed epistemologist circa 1997. (That is, by a proponent of the traditional view.) So $p$ is true, and things won't go badly for them if they take the risk. But still, in a lot of these cases, there is a strong intuition that they do not know that $p$, and as I've just been arguing, that is hard to square with the idea that they know that $p$. So assuming the traditional view is right about the subject as they were before facing the practical choice, having this choice in front of them causes them to lose knowledge that $p$.
+
+But what is it about these choices that triggers a loss of knowledge? There is a familiar answer to this, one explicitly endorsed by @Hawthorne2004 and @Stanley2005. It is that they are facing a 'high stakes' choice. Now what it is for a choice to be high stakes is never made entirely clear, and @AndersonHawthorne2019a show that it is hard to provide an adequate definition in full generality. But in the simple cases described in the previous paragraph, it is easy enough to say what a high stakes case is. It just means that $L$ is large. So one gets the suggestion that practical factors kick in when faced with a case where there is a chance of a large loss.
+
+This is not the view I defend. I think $L$ matters, but only indirectly. What is (typically) true in these cases is that the subject should maximise expected utility relative to what they know.^[This simplifies a little the relationship between rational choice and expected utility maximisation. Later in the book I'll have to be much more careful about this relationship. See chapter \@ref(ties) for many more details.] And taking the risky choice maximises expected utility only if this equation is true.
+
+$$
+\frac{\Pr(p)}{1 - \Pr(p)} > \frac{L}{G}
+$$
+
+The left hand side expresses the odds that $p$ is true. The right hand side expresses how high those odds have to be before the risk is worth taking. If the equation fails to hold, then the risk is not worth taking. And if risk is not worth taking, then the subject doesn't know that $p$
+
+Since the numerator of the right hand side is $L$, then one way to destroy knowledge that $p$ is to present the subject with a situation where $L$ is very high. But it isn't the only way. Since the denominator of the right hand side is $G$, another way to destroy knowledge that $p$ is to present the subject with a situation where $G$ is very low.
+
+In effect, we've seen such a situation with Anisa. But to make the parallel to Blaise's case even clearer, consider Darja's case. She has been reading books about World War One, and yesterday read that Franz Ferdinand was assassinated on St Vitus's Day, June 28, 1914. She is now offered a chance to play a slightly unusual quiz game. She has to answer the question _What was the date of Franz Ferdinand's assassination?_ If she gets it right, she wins $50. If she gets it wrong, she wins nothing. Here's what is strange about the game. She is allowed to Google the answer before answering. So here are the two live options for Darja. In the table, and in what follows, $p$ is the proposition that Franz Ferdinand was indeed assassinated on June 28, 1914.
+
+--------------------- -------------------- ---------------------
+                               $p$               $\neg p$
+Say "June 28, 1914"           $50$                  $0$
+Google the answer      $50 - \varepsilon$    $50 - \varepsilon$
+--------------------- -------------------- ---------------------
+
+If Darja has her phone near her, and has cheap easy access to Google, then $\varepsilon$ might be really low. And then she should take the safe option, unless she is incredibly sure that the book she read is reliable, and that she has precisely remembered it. In a lot of realistic cases, that won't happen, and $\Pr(p)$ will be too low for her to take the risky option of saying "June 28, 1914". She should take the safe option of Googling the answer. And that means she doesn't know that $p$, even if she remembers reading it in a book that is actually reliable. Facing a long odds bet can cause knowledge loss, even in low stakes situations.
+
+I'm not the first to focus on these long odds/low stakes cases. Jessica @Brown2008 [176] notes that these cases raise problems for the stakes-centric version of IRT. And @AndersonHawthorne2019a argue that once we get beyond the simple two-state/two-option choices, it isn't at all easy to say what situations are and are not high-stakes choices. I'll return to their objection in chapter \@ref(objections), but for now I just want to note that the version of IRT I'm defending doesn't give any special significance to high stakes choices. What makes knowledge hard is, to a first approximation, facing a long odds bet, not facing a high stakes bet.

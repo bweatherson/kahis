@@ -1,0 +1,3 @@
+# Stakes {#stakes}
+
+This chapter discusses a lot of objections to interest-relative theories in epistemology that turn out to be primarily objections to stakes based versions of IRT. In most of the cases to be discussed, I think the objections are fairly good objections to that particular kind of IRT. But what many of the objectors fail to note is that this is just one kind of IRT, and an odds-based version is immune to these objections.

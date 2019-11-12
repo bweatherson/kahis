@@ -1,0 +1,3 @@
+# Facing the Changes {#changesobjection}
+
+Interest-relative theories are often accused of having intuitively implausible implications about when someone changes between knowing and not knowing something. And it certainly does have implications in this respect that are surprising if you have a certain kind of epistemological training. But given everything we have learned in the last 60 years about the kinds of thing knowledge is sensitive to, we shouldn't be surprised that knowledge is also sensitive to interests.
