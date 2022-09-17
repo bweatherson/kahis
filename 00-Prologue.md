@@ -1,8 +1,10 @@
 # Prologue {#prologue}
 
+## Sensitivity {#prologue-sensitive}
+
 What we know is sensitive to ever so many factors. The thesis of this book is that one of those factors is which questions we are interested in. 
 
-To know something in the context of answering a question requires, among other things, that we can treat the thing known as a fixed starting point for that inquiry. But there is practically nothing that we can treat as a fixed point in any inquiry whatsoever. If the stakes are high enough, or cost of questioning low enough, it can be appropriate to question almost anything at all. If what we know is what can be treated as a fixed starting point in any inquiry whatsoever, then we know almost nothing. Since we do know a lot, this can't be right.
+To know something in the context of answering a question requires, among other things, that we can treat the thing known as a fixed starting point for that inquiry. But there is practically nothing that we can treat as a fixed point in any inquiry whatsoever. If the stakes are high enough, or cost of questioning low enough, it can be appropriate to question almost anything at all. For almost anything we know, the question "How do you know that? Are your sources good enough?" can be a legitimate inquiry, and the piece of knowledge in question isn't a legitimate thing to use in that very inquiry. If what we know is what can be treated as a fixed starting point in any inquiry whatsoever, then we know almost nothing. Since we do know a lot, this can't be right.
 
 The solution is to say that what we know varies depending on what questions we are interested in, and so on what inquiries we are engaged in. If a proposition can't be treated as a fixed point for a particular inquiry, then it can't be known so long as we are engaged in that inquiry. But it can, at least possibly, be known at other times.
 
@@ -144,3 +146,9 @@ And this last claim is independently implausible. Think about the difference bet
 If we think knowledge is sensitive in any way to the features of one's environment, then it will end up being sensitive to one's interests. (This point is not new; it is well made by Nilanjan Das.) The notion of 'environment' that matters to these constraints can't be given a narrowly physical definition. It can't be defined, for instance, as all places within some specific distance from me. My environment, in the relevant sense, consists of a network of towns and universities throughout the globe, and excludes any number of places a short drive away. But should I become more interested in nearby suburbs than far away colleges, my environment would change. Since what is in one's environment is interest-relative, then any theory that accounts for cases like Variants S or H by appeal to features of Charlotte's environment is an interest-relative theory. And most 'traditional', 'truth-connected' theories of knowledge do account for cases like Variants S and H in this way. 
 
 Now this isn't the only way, or even the main way, that interests matter to knowledge. But it is useful to see how easy it is for factors like interests to become relevant to knowledge. And when we return later in the book to objections to my version of the interest-relative theory, it will be useful to bear in mind just how many weird and wonderful things knowledge is sensitive to.
+
+## Myths and Legends {#prologue-myths}
+
+Most of the literture on interest-relativity has been centered around arguments. Here's a case that interest-relative or interest-invariant views have more plausible things to say about. Here's the principle that supports one or other view, or here's a counterexample to it; that kind of thing. And the vast bulk of this book will be no exception. Indeed, I'll launch into a novel argument for interest-relativity from the first line of chapter \@ref(interests). But before I do that, I want to start with some myths. The point of the myths is not to argue for interest-relativism, but to create a space where interest-relativism seems plausible, or at least possible.
+
+Interest-relativity has a strange place in philosophical discourse. It isn't exactly an unknown view.  
