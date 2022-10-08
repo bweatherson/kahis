@@ -4,6 +4,7 @@ language:
   ui:
     chapter_name: "Chapter "
 rmd_files:
-  html: ["index.Rmd",  "00-Prologue.md", "01-overview.md", "02-belief.md", "03-knowledge.md", "04-evidence.md", "05-ratbel.md", "07-ties.md", "temp-preface.md", "references.md"]
-  latex: ["index.Rmd", "00-Prologue.md", "01-overview.md", "02-belief.md", "03-knowledge.md", "04-evidence.md", "05-ratbel.md", "07-ties.md", "08-changes.md", "06-history.md", "11-objections.md", "10-preface.md", "references.md"]
-
+  html: ["index.Rmd", "html-front.Rmd", "latest-export.md", "references.Rmd"]
+  latex: ["index.Rmd", "latest-export.md","bib-format.Rmd"]
+  epub: ["index.Rmd", "latest-export.md"]
+  docx: ["index.Rmd", "latest-export.md"]

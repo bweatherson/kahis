@@ -1,1 +1,0 @@
-### Ganson's Theory {#ganson}

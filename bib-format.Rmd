@@ -1,0 +1,5 @@
+```{=latex}
+\fancyhf{}
+\fancyhead[C]{\textit {Bibliography}}
+\fancyhead[R]{\thepage}
+```

@@ -1,26 +1,31 @@
-%\AtBeginDocument{\let\maketitle\relax}
-\preauthor{\vspace{6pt} \centering\large}
-\predate{\vspace{6pt} \centering\large}
-
 \usepackage{nicefrac}
-\usepackage[defaultmathsizes,italic]{mathastext}
 \usepackage{microtype}
 \usepackage{gensymb}
+%\usepackage{titling}
+
+%\AtBeginDocument{\let\maketitle\relax}
+%\preauthor{\vspace{6pt} \centering\large}
+%\predate{\vspace{6pt} \centering\large}
 
 \raggedbottom
 \widowpenalty=150
 \clubpenalty=150
 
-\def\toprule{}
-\def\bottomrule{}
-\def\midrule{}
+%\def\toprule{}
+%\def\bottomrule{}
+%\def\midrule{}
+
+\setlength\heavyrulewidth{0ex}
+\setlength\lightrulewidth{0ex}
+
+\counterwithout*{footnote}{chapter}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{#1 }{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
-\fancyhead[C]{\textit \leftmark}
+\fancyhead[C]{\nouppercase{\textit \leftmark}}
 \fancyhead[R]{\thepage}
 %\fancyhead[LE]{\bfseries\rightmark}
 \fancyfoot{}
@@ -62,3 +67,5 @@
 \newcommand{\PPL}{Reprinted in \textit{Papers in Philosophical Logic}, pp. \hbox{}}    
 \newcommand{\PME}{Reprinted in \textit{Papers in Metaphysics and Epistemology}, pp. \hbox{}}    
 \newcommand{\PESP}{Reprinted in \textit{Papers in Ethics and Social Philosophy}, pp. \hbox{}}
+
+\usepackage[defaultmathsizes,italic]{mathastext}

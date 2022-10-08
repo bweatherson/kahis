@@ -1,0 +1,5 @@
+## Website Instructions {-}
+
+- The view is somewhat customisable using the toolbar above. Clicking on the "A" will let you change the font type, the font size, and the background color. 
+-  The book is searchable; click on the magnifying glass to search throughout the book.
+- And if you'd prefer a more traditional version, the down arrow in the toolbar lets you download a PDF or EPub version.
