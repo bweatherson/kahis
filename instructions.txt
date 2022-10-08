@@ -1,8 +1,0 @@
-Instructions for getting from Ulysses to Rmd
-
-- In Ulysses, make sure things are commented. So write ~ around things you need to go over smoothly
-- Select all pages in left hand column
-- Select 'export preview' in the left end of the top right icons
-- Save it as a markdown file in kahis-ulysses-bookdown as latest-export.md
-- Rename it to a Rmd (Not needed any more - _bookdown.yml looks for latest-export.md)
-- Build book!
