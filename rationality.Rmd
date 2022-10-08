@@ -1,0 +1,257 @@
+# Rationality {#ratbel}
+
+This chapter discusses the role of rational belief in the version of IRT that I defend. It starts by noting that the theory allows for a new kind of Dharmottara case, where a rational, true belief is not actually knowledge. And I argue that it is a good thing it allows this, for once we see the kind of case in question, it is plausible that it is a Dharmottara case. Then I present two arguments, one of them due to Timothy Williamson and the other novel, for the conclusion that it is possible to have rational credence 1 in a proposition without fully believing it. If that's right, it refutes two prominent theories of the relationship between credence and full belief. The first is that full belief is credence one, and the second is that full belief is credence above some interest-invariant threshold. These are metaphysical theses about the nature of belief, but each of them comes with a matching normative thesis: that rational belief is a matter of having such-and-such rational credence. I'm going to focus primarily on the second of these, that rational belief is a matter of having rational credence above some interest-invariant threshold. If that fails, then so does the theory that rational belief is a matter of rationally having credence 1. But there are independent problems for the view that the threshold is high but not maximal, and the arguments against that view are less controversial than the ones against the view that rational belief is rational maximal credence. I'll end the chapter by noting how the view of rational belief that comes out of IRT is immune to those problems.
+
+## Atomism about Rational Belief {#atomism}
+
+In chapter \@ref(belief) I argued for two individually necessary and jointly sufficient conditions for belief.^[This section is based on §§3.1 of my [-@Weatherson2012].] They are
+
+1. In some possible decision problem, _p_ is taken for granted.
+2. For every question the agent is interested in, the agent answers the question the same way (i.e., giving the same answer for the same reasons) whether the question is asked unconditionally or conditional on _p_.
+
+At this point one might think that offering a theory of rational belief would be easy. It is rational to believe _p_ just in case it is rational to satisfy these conditions. Unfortunately, this nice thought can't be right. It can be irrational to satisfy these conditions while rationally believing _p_.
+
+Coraline is like Anisa and Chamari, in that she has read a reliable book saying that the Battle of Agincourt was in 1415. And she now believes that the Battle of Agincourt was indeed in 1415, for the very good reason that she read it in a reliable book. 
+
+In front of her is a sealed envelope, and inside the envelope a number is written on a slip of paper. Let _X_ denote that number, non-rigidly. (So when I say Coraline believes _X_ = _x_, it means she believes that the number written on the slip of paper is _x_, where _x_ rigidly denotes some number.) Coraline is offered the following bet:
+
+- If she declines the bet, nothing happens.
+- If she accepts the bet, and the Battle of Agincourt was in 1415, she wins $1.
+- If she accepts the bet, and the Battle of Agincourt was not in 1415, she loses _X_ dollars.
+
+For some reason, Coraline is convinced that _X_ = 10. This is very strange, since she was shown the slip of paper just a few minutes ago, and it clearly showed that _X_ = 10^9^. Coraline wouldn't bet on when the Battle of Agincourt was at odds of a billion to one. But she would take that bet at 10 to 1, which is what she thinks she is faced with. Indeed, she doesn't even conceptualise it as a bet; it's a free dollar she thinks. Right now, she is disposed to treat the date of the battle as a given. She is disposed to lose this disposition should a very long odds bet appear to depend on it. But she doesn't believe she is facing such a bet.
+
+So Coraline accepts the bet; she thinks it is a free dollar. And that's when the battle took place, so she wins the dollar. All's well that end's well. But it was really a wildly irrational bet to take. You shouldn't bet at those odds on something you remember from a history book. Neither memory nor history books are that reliable. Coraline was not rational to treat the questions _Should I take this bet?_, and _Conditional on the Battle of Agincourt being in 1415, should I take this bet?_ the same way. Her treating them the same way was fortunate - she won a dollar - but irrational.
+
+Yet it seems odd to say that Coraline's belief about the Battle of Agincourt was irrational. What was irrational was her belief about the envelope, not her belief about the battle. To say that a particular disposition was irrational is to make a holistic assessment of the person with the disposition. But whether a belief is rational or not is, relatively speaking, atomistic.
+
+That suggests the following condition on rational belief.
+
+> S's belief that _p_ is irrational if
+> 
+> 1. S irrationally has one of the dispositions that is characteristic of belief that _p_; and
+> 2. What explains S having a disposition that is irrational in that way is her attitudes towards _p_, not (solely) her attitudes towards other propositions, or her skills in practical reasoning.
+
+In "Knowledge, Bets and Interests" [@Weatherson2012] I gave a similar theory about these cases - I said that S's belief that _p_ was irrational if the irrational dispositions were caused by an irrationally high credence in _p_. I mean the account I'm giving here to be ever so slightly more general. I'll come back to that below, because first I want to spell out the second clause.
+
+Intuitively, Coraline's irrational acceptance of the belief is explained by her (irrational) belief about _X_, not her (rational) belief about the Battle of Agincourt. We can take the relevant notion of explanation as a primitive if we like; it's in no worse philosophical shape than other notions we take as a primitive. But it is possible to spell it out a little more.
+
+Coraline has a pattern of irrational dispositions related to the envelope. If you offer her $50 or _X_ dollars, she'll take the $50. If you change the bet so it isn't about Agincourt, but is instead about any other thing she has excellent but not quite conclusive evidence for, she'll still take the bet.
+
+On the other hand, she does not have a pattern of irrational dispositions related to the Battle of Agincourt. She has this one, but if you change the payouts so they are not related to this particular envelope, then for all we have said so far, she won't do anything irrational.
+
+That difference in patterns matters. We know that it's the beliefs about the envelope, and not the beliefs about the battle, that are explanatory because of this pattern. We could try and create a reductive analysis of explanation in clause 2 using facts about patterns, like the way Lewis tries to create a reductive analysis of causation using similar facts about patterns in "Causation as Influence" [@Lewis2004a]. But doing so would invariably run up against edge cases that would be more trouble to resolve than they are worth.
+
+That's because there are ever so many ways in which someone could have an irrational disposition about any particular case. We can imagine Coraline having a rational belief about the envelope, but still taking the bet because of any of the following reasons:
+
+- It has been her life goal to lose a billion dollars in a day, so taking the bet strictly dominates not taking it.
+- She believes (irrationally) that anyone who loses a billion dollars in a day goes to heaven, and she (rationally) values heaven above any monetary amount.
+- She consistently makes reasoning errors about billions, so the prospect of losing a billion dollars rarely triggers an awareness that she should reconsider things she normally takes for granted.
+
+The last one of these is especially interesting. The picture of rational agency I'm working with here owes a lot to the notion of epistemic vigilance, as developed by Dan Sperber and co-authors [@SperberEtAl2010]. The rational agent will have all these beliefs in their head that they will drop when the costs of being wrong about them are too high, or the costs of re-opening inquiry into them are too low. They can't reason, at least in any conscious way, about whether to drop these beliefs, because to do that is, in some sense, to call the belief into doubt. And what's at issue is whether they should call the belief into doubt. So what they need is some kind of disposition to replace a belief that _p_ with an attitude that _p_ is highly probable, and this disposition should correlate with the cases where taking _p_ for granted will not maximise expected utility. This disposition will be a kind of vigilance. As Sperber et al show, we need some notion of vigilance to explain a lot of different aspects of epistemic evaluation, and I think it can be usefully pressed into service here.^[Kenneth Boyd [-@Boyd2015] suggests a somewhat similar role for vigilance in the course of defending an interest-invariant epistemic theory. Obviously I don't agree with his conclusions, but my use of Sperber's work does echo his.]
+
+But if you need something like vigilance, then you have to allow that vigilance might fail. And maybe some irrational dispositions can be traced to that failure, and not to any propositional attitude the decider has. For example, if Coraline systematically fails to be vigilant when exactly one billion dollars is at stake, then we might want to say that her belief in _p_ is still rational, and she is practically, rather than theoretically, irrational. (Why could this happen? Perhaps she thinks of Dr Evil every time she hears the phrase "One billion dollars", and this distractor prevents her normally reliable skill of being vigilant from kicking in.)
+
+If one tries to turn the vague talk of patterns of bets involving one proposition or another into a reductive analysis of when one particular belief is irrational, one will inevitably run into hard cases where a decider has multiple failures. We can't say that what makes Coraline's belief about the envelope, and not her belief about the battle, irrational is that if you replaced the envelope, she would invariably have a rational disposition. After all, she might have some other irrational belief about whatever we replace the envelope with. Or she might have some failure of practical reasoning, like a vigilance failure. Any kind of universal claim, like that it is only bets about the envelope that she gets wrong, won't do the job we need.
+
+In "Knowledge, Bets and Interests", I tried to use the machinery of credences to make something like this point. The idea was that Coraline's belief in _p_ was rational because her belief just was her high credence in _p_, and that credence was rational. I still think that's approximately right, but it can't be the full story. 
+
+For one thing, beliefs and credences aren't as closely connected metaphysically as this suggests. To have a belief in _p_ isn't just to have a high credence, it's to be disposed to let _p_ play a certain role. (This will become important in the next two sections.)
+
+For another thing, it is hard to identify precisely what a credence is in the case of an irrational agent. The usual ways we identify credences, via betting dispositions or representation theorems, assume away all irrationality. But an irrational person might still have some rational beliefs. 
+
+Attempts to generalise accounts of credences so that they cover the irrational person will end up saying something like what I've said about patterns. What it is to have credence 0.6 in _p_ isn't to have a set of preferences that satisfies all the presuppositions of such and such a representation theorem, and that theorem to say that one can be represented by a probability function _Pr_ and a utility function _U_ such that _Pr_(_p_) = 0.6. That can't be right because some people will, intuitively, have credence about 0.6 in _p_ while not uniformly conforming to these constraints. But what makes them intuitive cases of credence roughly 0.6 in _p_ is that generally they behave like the perfectly rational person with credence 0.6 in _p_, and most of the exceptions are explained by other features of their cognitive system other than their attitude to _p_.
+
+In other words, we don't have a full theory of credences for irrational beings right now, and when we get one, it won't be much simpler than the theory in terms of patterns and explanations I've offered here. So it's best for now to just understand belief in terms of a pattern of dispositions, and say that the belief is  rational just in case that pattern is rational. And that might mean that on some occasions _p_-related activity is irrational even though the pattern of _p_-related activity is a rational pattern. Any given action, like any thing whatsoever, can be classified in any number of ways. What matters here is what explains the irrationality of a particular irrational act, and that will be a matter of which patterns of irrational dispositions the actor has.
+
+However we explain Coraline's belief, the upshot is that she has a rational, true belief that is not knowledge. This is a novel kind of Dharmottara case. (Or Gettier case for folks who prefer that nomenclature.) It's not the exact kind of case that Dharmottara originally described. Coraline doesn't infer anything about the Battle of Agincourt from a false belief. But it's a mistake to think that the class of rational, true beliefs that are not knowledge form a natural kind. In general, negatively defined classes are disjunctive; there are ever so many ways to not have a property. An upshot of this discussion of Coraline is that there is one more kind of Dharmottara case than was previously recognised. But as, for example, @WilliamsonLofoten and @Nagel2013-Williamson have shown, we have independent reason for thinking this is a very disjunctive class. So the fact that it doesn't look anything like Dharmottara's example shouldn't make us doubt it is a rational, true belief that is not knowledge.
+
+## Coin Puzzles {#lockecoin}
+
+So rational belief is not identical to rationally having the dispositions that constitute belief. But nor is rational belief a matter of rational high credence. In this section and the next I'll argue that even rational credence 1 does not suffice for rational belief. Then in the next section I'll run through some relatively familiar arguments that no threshold short of 1 could suffice for belief. If the argument of this section or the next is successful, those 'familiar arguments' will be unnecessary. But the two arguments I'm about to give are controversial even by the standards of a book arguing for IRT, so I'm including them as backups.
+
+The point of these sections is primarily normative, but it should have metaphysical consequences. I'm interested in arguing against the 'Lockean' thesis that to believe _p_ just is to have a high credence in _p_. Normally, this threshold of high enough belief for credence is taken to be interest-invariant, so this is a rival to IRT. But there is some variation in the literature about whether the phrase _The Lockean Thesis_ refers to a metaphysical claim, belief is high credence, or a normative claim, rational belief is rational high credence. Since everyone who accepts the metaphysical claim also accepts the normative claim, and usually takes it to be a consequence of the metaphysical claim, arguing against the normative claim is a way of arguing against the metaphysical claim.
+
+The first puzzle for this Lockean view comes from an argument that Timothy Williamson [-@Williamson2007] made about certain kinds of infinitary events. A fair coin is about to be tossed. It will be tossed repeatedly until it lands heads twice. The coin tosses will get faster and faster, so even if there is an infinite sequence of tosses, it will finish in a finite time. (This isn't physically realistic, but this need not detain us. All that will really matter for the example is that someone could believe this will happen, and that's physically possible.)
+
+Consider the following three propositions
+
+A.  At least one of the coin tosses will land either heads or tails.
+B.  At least one of the coin tosses will land heads.
+C.  At least one of the coin tosses after the first toss will land heads.
+
+So if the first coin toss lands heads, and the rest land tails, B is true and C is false.
+
+Now consider a few versions of the Red-Blue game (perhaps played by someone who takes this to be a realistic scenario). In the first instance, the red sentence says that B is true, and the blue sentence says that C is true. In the second instance, the red sentence says that A is true, and the blue sentence says that B is true. In both cases, it seems that the unique rational play is Red-True. But it's really hard to explain this in a way consistent with the Lockean view.
+
+Williamson argues that we have good reason to believe that the probability of all three sentences is 1. For B to be false requires C to be false, and for one more coin flip to land tails. So the probability that B is false is one-half the probability that C is false. But we also have good reason to believe that the probabilities of B and C are the same. In both cases, they are false if a countable infinity of coin flips lands tails. Assuming that the probability of some sequence having a property supervenes on the probabilities of individual events in that sequence (conditional, perhaps, on other events in the sequence), it follows that the probabilities of B and C are identical. And the only way for the probability that B is false to be half the probability that C is false, while B and C have the same probability, is for both of them to have probability 1. Since the probability of A is at least as high as the probability of B (since it is true whenever B is true, but not conversely), it follows that the probability of all three is 1.
+
+But since betting on A weakly dominates betting on B, and betting on B weakly dominates betting on C, we shouldn't have the same attitudes towards bets on these three propositions. Given a choice between betting on B and betting on C, we should prefer to bet on B since there is no way that could make us worse off, and some way it could make us better off. Given that choice, we should prefer to bet on B (i.e., play Red-True when B and C are expressed by the red and blue sentences), because it might be that B is true and C false.
+
+Assume (something the Lockean may not wish to acknowledge) that to say something might be the case is to reject believing its negation. Then a rational person faced with these choices will not believe _Either B is false or C is true_; they will take its negation to be possible. But that proposition is at least as probable as C, so it too has probability 1. So probability 1 does not suffice for belief. This is a real problem for the Lockean - no probability suffices for belief, not even probability 1.
+
+## Playing Games {#lockegames}
+
+Some people might be nervous about resting too much weight on infinitary examples like the coin sequence. So I'll show how the same puzzle arises in a simple, and finite, game.^[This section is based on material from §1 of my [-@Weatherson2016].] The game itself is a nice illustration of how a number of distinct solution concepts in game theory come apart. (Indeed, the use I'll make of it isn't a million miles from the use that Kohlberg and Mertens [-@KohlbergMertens1986] make of it.) To set the problem up, I need to say a few words about how I think of game theory. This won't be at all original - most of what I say is taken from important works by Robert Stalnaker [-@Stalnaker1994; -@Stalnaker1996; -@Stalnaker1998; -@Stalnaker1999]. But the underlying philosophical points are important, and it is easy to get confused about them. (At least, I used to get these points all wrong, and that's got to be evidence they are easy to get confused about, right?) So I'll set the basic points slowly, and then circle back to the puzzle for the Lockeans.^[I'm grateful to the participants in a game theory seminar at Arché in 2011, especially Josh Dever and Levi Spectre, for very helpful discussions that helped me see through my previous confusions.]
+
+Start with a simple decision problem, where the agent has a choice between two acts _A_~1~and _A_~2~, and there are two possible states of the world, _S_~1~ and _S_~2~, and the agent knows the payouts for each act-state pair are given by the following table.
+
+           $S_1$    $S_2$
+--------- -------  --------
+ _A_~1~     4        0
+ _A_~2~     1        1
+
+
+What to do? I hope you share the intuition that it is radically underdetermined by the information I've given you so far. If _S_~2~ is much more probable than _S_~1~, then _A_~2~ should be chosen; otherwise _A_~1~ should be chosen. But I haven't said anything about the relative probability of those two states. Now compare that to a simple game. Row has two choices, which I'll call _A_~1~ and _A_~2~. Column also has two choices, which I'll call _S_~1~ and _S_~2~. It is common knowledge that each player is rational, and that the payouts for the pairs of choices are given in the following table. (As always, Row's payouts are given first.)
+
+           $S_1$    $S_2$
+--------- -------  --------
+ _A_~1~    4, 0     0, 1
+ _A_~2~    1, 0     1, 1
+
+What should Row do? This one is easy. Column gets 1 for sure if she plays _S_~2~, and 0 for sure if she plays _S_~1~. So she'll play _S_~2~. And given that she's playing _S_~2~, it is best for Row to play _A_~2~.
+
+You probably noticed that the game is just a version of the decision problem from a couple of paragraphs ago. The relevant states of the world are choices of Column. But that's fine; the layout of that decision problem was neutral on what constituted the states _S_~1~ and _S_~2~. Note that the game can be solved without explicitly saying anything about probabilities. What is added to the (unsolvable) decision-theoretic problem is not information about probabilities, but information about Column's payouts, and the fact that Column is rational. Those facts imply something about Column's play, namely that she would play  _S_~2~. And that settles what Row should do.
+
+There's something quite general about this example. What's distinctive about game theory isn't that it involves any special kinds of decision making. Once we get the probabilities of each move by the other player, what's left is (mostly) expected utility maximisation.^[The qualification is because weak dominance reasoning cannot be construed as orthodox expected utility maximisation. We saw that in the coins case, and it will become important again here. It is possible to model weak dominance reasoning using non-standard probabilities, as in Brandenburger [-@Brandenburger2008], but that introduces new complications.] The distinctive thing about game theory is that the probabilities aren't specified in the setup of the game; rather, they are solved for. Apart from special cases, such as where one option strictly dominates another, not much can be said about a decision problem with unspecified probabilities. But a lot can be said about games where the setup of the game doesn't specify the probabilities, because it is possible to solve for the probabilities given the information that is provided.
+
+This way of thinking about games makes the description of game theory as 'interactive epistemology' [@Aumann1999] rather apt. The theorist's work is to solve for what a rational agent should think other rational agents in the game should do. From this perspective, it isn't surprising that game theory will make heavy use of equilibrium concepts. In solving a game, we must deploy a theory of rationality, and attribute that theory to rational actors in the game itself. In effect, we are treating rationality as something of an unknown, but one that occurs in every equation we have to work with. Not surprisingly, there are going to be multiple solutions to the puzzles we face.
+
+This way of thinking lends itself to an epistemological interpretation of one of the most puzzling concepts in game theory, the mixed strategy. The most important solution concept in modern game theory is the Nash equilibrium. A set of moves is a Nash equilibrium if no player can improve their outcome by deviating from the equilibrium, conditional on no other player deviating. In many simple games, the only Nash equilibria involve mixed strategies. Here's one simple example.
+
+            $S_1$    $S_2$
+---------- -------  --------
+ _A_~1~     0, 1     10, 0
+ _A_~2~     9, 0     -1, 1
+
+This game is reminiscent of some puzzles that have been much discussed in the decision theory literature, namely asymmetric Death in Damascus puzzles [@Richter1984] . Here Column wants herself and Row to make the 'same' choice, i.e., _A_~1~ and _S_~1~~ or ~_A_~2~ and _S_~2~. She gets 1 if they do, 0 otherwise. And Row wants them to make different choices, and gets 10 if they do. Row also dislikes playing _A_~2~, and this costs her 1 whatever else happens. It isn't too hard to prove that the only Nash equilibrium for this game is that Row plays a mixed strategy playing both _A_~1~ and _A_~2~ with probability ½, while Column plays the mixed strategy that gives _S_~1~ probability 0.55, and _S_~2~ with probability 0.45.
+
+Now what is a mixed strategy? It is easy enough to take away form the standard game theory textbooks a **metaphysical** interpretation of what a mixed strategy is. Here, for instance, is the paragraph introducing mixed strategies in Dixit and Skeath's _Games of Strategy_.
+
+> When players choose to act unsystematically, they pick from among their pure strategies in some random way ...We call a random mixture between these two pure strategies a mixed strategy. [@DixitSkeath2004 186]
+
+Dixit and Skeath are saying that it is definitive of a mixed strategy that players use some kind of randomisation device to pick their plays on any particular run of a game. That is, the probabilities in a mixed strategy must be in the world; they must go into the players' choice of play. That's one way, the paradigm way really, that we can think of mixed strategies metaphysically.
+
+But the understanding of game theory as interactive epistemology naturally suggests an **epistemological** interpretation of mixed strategies.
+
+> One could easily ... [model players] ... turning the choice over to a randomizing device, but while it might be harmless to permit this, players satisfying the cognitive idealizations that game theory and decision theory make could have no motive for playing a mixed strategy. So how are we to understand Nash equilibrium in model theoretic terms as a solution concept? We should follow the suggestion of Bayesian game theorists, interpreting mixed strategy profiles as representations, not of players' choices, but of their beliefs. [@Stalnaker1994 57-8]
+
+One nice advantage of the epistemological interpretation, as noted by Binmore [-@Binmore2007 185] is that we don't require players to have _n_-sided dice in their satchels, for every _n_, every time they play a game.^[It is worse than if some games have the only equilibria involving mixed strategies with irrational probabilities. And it might be noted that Binmore's introduction of mixed strategies, on page 44 of his [-@Binmore2007], sounds much more like the metaphysical interpretation. But I think the later discussion is meant to indicate that this is just a heuristic introduction; the epistemological interpretation is the correct one.] But another advantage is that it lets us make sense of the difference between playing a pure strategy and playing a mixed strategy where one of the 'parts' of the mixture is played with probability one.
+
+With that in mind, consider the below game, which I'll call Up-Down.^[In earlier work I'd called it Red-Green, but this is too easily confused with the Red-Blue game that plays such an important role in chapter \@ref(interests).] Informally, in this game _A_ and _B_ must each play a card with an arrow pointing up, or a card with an arrow pointing down. I will capitalise _A_'s moves, i.e., _A_ can play UP or DOWN, and italicise _B_'s moves, i.e., _B_ can play _up_ or _down_. If at least one player plays a card with an arrow facing up, each player gets \_1. If two cards with arrows facing down are played, each gets nothing. Each cares just about their own wealth, so getting \_1 is worth 1 util. All of this is common knowledge. More formally, here is the game table, with _A_ on the row and _B_ on the column.
+
+        *up*    *down*
+----- ------- ---------
+   UP   1, 1     1, 1
+ DOWN   1, 1     0, 0
+
+When I write game tables like this, I mean that the players know that these are the payouts, that the players know the other players to be rational, and these pieces of knowledge are common knowledge to at least as many iterations as needed to solve the game. (I assume here that in solving the game, it is legitimate to assume that if a player knows that one option will do better than another, they have conclusive reason to reject the latter option. This is completely standard in game theory, though somewhat controversial in philosophy.) With that in mind, let's think about how the agents should approach this game.
+
+I'm going to make one big simplifying assumption at first. I'll relax this later, but it will help the discussion to start with this assumption. This assumption is that the doctrine of Uniqueness applies here; there is precisely one rational credence to have in any salient proposition about how the game will play. Some philosophers think that Uniqueness always holds [@White2005-WHIEP]. I join with those such as North [-@North2010] and Schoenfield [-@Schoenfield2013] who don't. But it does seem like Uniqueness might often hold; there might often be a right answer to a particular problem. Anyway, I'm going to start by assuming that it does hold here.
+
+The first thing to note about the game is that it is symmetric. So the probability of _A_ playing UP should be the same as the probability of _B_ playing _up_, since _A_ and _B_ face exactly the same problem. Call this common probability _x_. If _x_ < 1, we get a quick contradiction. The expected value, to Row, of UP, is 1. Indeed, the known value of UP is 1. If the probability of _up_ is _x_, then the expected value of UP is _x_. So if _x_ < 1, and Row is rational, she'll definitely play UP. But that's inconsistent with the claim that _x_ < 1 since that means that it isn't definite that Row will play UP.
+
+So we can conclude that _x_ = 1. Does that mean we can know that Row will play UP? No. Assume we could conclude that. Whatever reason we would have for concluding that would be a reason for any rational person to conclude that Column will play _up_. Since any rational person can conclude this, Row can conclude it. So Row knows that she'll get 1 whether she plays UP or DOWN. But then she should be indifferent between playing UP and DOWN. And if we know she's indifferent between playing UP and DOWN, and our only evidence for what she'll play is that she's a rational player who'll maximise her returns, then we can't be in a position to know she'll play UP.
+
+For the rest of this ssection I want to reply to one objection, and weaken an assumption I made earlier. The objection is that I'm wrong to assume that agents will only maximise expected utility. They may have tie-breaker rules, and those rules might undermine the arguments I gave above. The assumption is that there's a uniquely rational credence to have in any given situation.
+
+I argued that if we knew that _A_ would play UP, we could show that _A_ had no reason to play UP. But actually what we showed was that the expected utility of playing UP would be the same as playing DOWN. Perhaps _A_ has a reason to play UP, namely that UP weakly dominates DOWN. After all, there's one possibility on the table where UP does better than DOWN, and none where RED does better. And perhaps that's a reason, even if it isn't a reason that expected utility considerations are sensitive to.
+
+Now I don't want to insist on expected utility maximisation as the only rule for rational decision making. Sometimes, I think some kind of tie-breaker procedure is part of rationality. In the papers by Stalnaker I mentioned above, he often appeals to this kind of weak dominance reasoning to resolve various hard cases. But I don't think weak dominance provides a reason to play UP in this particular case. When Stalnaker says that agents should use weak dominance reasoning, it is always in the context of games where the agents' attitude towards the game matrix is different to their attitude towards each other. One case that Stalnaker discusses in detail is where the game table is common knowledge, but there is merely common (justified, true) belief in common rationality. Given such a difference in attitudes, it does seem there's a good sense in which the most salient departure from equilibrium will be one in which the players end up somewhere else on the table. And given that, weak dominance reasoning seems appropriate.
+
+But that's not what we've got here. Assuming that rationality requires playing UP/_up_, the players know we'll end up in the top left corner of the table. There's no chance that we'll end up elsewhere. Or, perhaps better, there is just as much chance we'll end up 'off the table', as that we'll end up in a non-equilibrium point on the table. To make this more vivid, consider the 'possibility' that _B_ will play _across_, and if _B_ plays _across_, _A_ will receive 2 if she plays DOWN, and -1 if she plays UP. Well hold on, you might think, didn't I say that _up_ and _down_ were the only options, and this was common knowledge? Well, yes, I did, but if the exercise is to consider what would happen if something the agent knows to be true doesn't obtain, then the possibility that one agent will play blue certainly seems like one worth considering. It is, after all, a metaphysical possibility. And if we take it seriously, then it isn't true that under any possible play of the game, UP does better than DOWN.
+
+We can put this as a dilemma. Assume, for reductio, that UP/_up_ is the only rational play. Then if we restrict our attention to possibilities that are epistemically open to _A_, then UP does just as well as DOWN; they both get 1 in every possibility. If we allow possibilities that are epistemically closed to _A_, then the possibility where _B_ plays _blue_ is just as relevant as the possibility that _B_ is irrational. After all, we stipulated that this is a case where rationality is common knowledge. In neither case does the weak dominance reasoning get any purchase.
+
+With that in mind, we can see why we don't need the assumption of Uniqueness. Let's play through how a failure of Uniqueness could undermine the argument. Assume, again for reductio, that we have credence ε > 0 that _A_ will play DOWN. Since _A_ maximises expected utility, that means _A_ must have credence 1 that _B_ will play _up_. But this is already odd. Even if you think people can have different reactions to the same evidence, it is odd to think that one rational agent could regard a possibility as infinitely less likely than another, given isomorphic evidence. And that's not all of the problems. Even if _A_ has credence 1 that _B_ will play _up_, it isn't obvious that playing DOWN is rational. After all, relative to the space of epistemic possibilities, UP weakly dominates DOWN. Remember that we're no longer assuming that it can be known what _A_ or _B_ will play. So even without Uniqueness, there are two reasons to think that it is wrong to have credence ε > 0 that _A_ will play DOWN. So we've still shown that credence 1 doesn't imply knowledge, and since the proof is known to us, and full belief is incompatible with knowing that you can't know, this is a case where credence 1 doesn't imply full belief. So whether _A_ plays UP, like whether the coin will ever land tails, is a case where belief comes apart from high credence, even if by high credence we literally mean credence one. This is a problem for the Lockean, and, like Williamson's coin, it is also a problem for the view that belief is credence one.
+
+## Puzzles for Lockeans {#lockepuzzles}
+
+I've already mentioned two classes of puzzles, those to do with infinite sequences of coin tosses and those to do with weak dominance in games. But there are other puzzles that apply especially to the Lockean, the theorist who identifies belief with credence above some non-maximal, interest-invariant, threshold.
+
+### Arbitrariness {#lockearb}
+
+The first problem for the Lockeans, and in a way the deepest, is that it makes the boundary between belief and non-belief arbitrary. This is a point that was well made some years ago now by Robert Stalnaker [-@Stalnaker1984 91]. Unless these numbers are made salient by the environment, there is no special difference between believing _p_ to degree 0.9876 and believing it to degree 0.9875. But if _t_ is 0.98755, this will be _the difference_ between believing _p_ and not believing it, which is an important difference. 
+
+The usual response to this, as found in Foley [-@Foley1993 Ch. 4], Hunter [-@Hunter1996] and Lee [-@Lee2017b], is to say that the boundary is vague. Now we might respond to this by noting that this only helps on an implausible theory of vagueness. On epistemicist theories, or supervaluationist theories, or on my preferred comparative truth theory [@Weatherson2005b], there will still be an arbitrary point which marks the difference between belief and non-belief. This won't be the case on various kinds of degree of truth theories. But, as Williamson [-@Williamson1994] pointed out, those are theories on which contradictions end up being half-true. And if saving the Lockean theory requires that we give up on the idea that contradictions are simply false, it is hard to see how it is worth the price.
+
+But a better response is to think about what it means to say that the belief/non-belief boundary is a vague point on a scale. We know plenty of terms where the boundary is a vague point on a scale. Comparative adjectives are typically like that. Whether a day is hot depends on whether it is above some vague point on a temperature scale, for example. But here's the thing about these vague terms - they don't enter into lawlike generalisations. (At least in a non-trivial way. Hot days are 24 hours long, and that's a law, but not one that hotness has a particular role in grounding.) The laws involve the scale; the most you can say using the vague term is some kind of generic. For instance, you can say that hot days are exhausting, or that electricity use is higher on hot days. But these are generics, and the interesting law-like claims will involve degrees of heat, not the hot/non-hot binary.
+
+It's a fairly central presupposition of this book that belief is not like that. Belief plays a key role in all sorts of non-trivial lawlike generalisations. Folk psychology is full of such lawlike generalisations. We're doing social science here, so the laws in question are hardly exceptionless. But they are counterfactually resilient, and explanatorily deep, and not just generics that are best explained using the underlying scale.
+
+Of course, the Lockean doesn't believe that these generalisations of folk psychology are anything more than generics, so this is a somewhat question-begging argument. But if you're not antecedently disposed to give up on folk psychology, or reduce it to the status of a bunch of helpful generics, it's worth seeing how striking the Lockean view here is. So consider a generalisation like the following.
+
+- If someone wants an outcome O, and they believe that doing X is the only way to get O, and they believe that doing X will neither incur any costs that are large in comparison to how good O is, nor prevent them being able to do something that brings about some other outcome that is comparatively good, then they will do X.
+
+This isn't a universal - some people are just practically irrational. But it's stronger than just a generic claim about high temperatures. Or so I say. But the Lockean does not say this; they say that this has widespread counterexamples, and when it is true, it is a relatively superficial truth whose explanatory force is entirely derived from deeper truths about credences.
+
+The Lockean, for instance, thinks that someone in Blaise's situation satisfies all the antecedents and qualifications in the principle. They want the child to have a moment of happiness. They believe (i.e., have a very high credence that) taking the bet will bring about this outcome, will have no costs at all, and will not prevent them doing anything else. Yet they will not think that people in Blaise's situation will generally take the bet, or that it would be rational for them to take the bet, or that taking the bet is explained by these high credences.
+
+That's what's bad about making the belief/non-belief distinction arbitrary. It means that generalisations about belief are going to be not particularly explanatory, and are going to have systematic (and highly rational) exceptions. We should expect more out of a theory of belief.
+
+### Correctness {#lockecorrect}
+
+I've talked about this one a bit in subsection \@ref(mecorrect), so I'll be brief here. Beliefs have correctness conditions. To believe _p_ when _p_ is false is to make a mistake. That might be an excusable mistake, or even a rational mistake, but it is a mistake. On the other hand, having an arbitrarily high credence in _p_ when _p_ turns out to be false is not a mistake. So having high credence in _p_ is not the same as believing _p_.
+
+Matthew Lee [-@Lee2017a] argues that the versions of this argument by Ross and Schroeder [-@RossSchroeder2014] and Fantl and McGrath [-@FantlMcGrath2009] are incomplete because they don't provide a conclusive case for the premise that having a high credence in a falsehood is not a mistake. But this gap can be plugged. Imagine a scientist, call her Marie, who knows the correct theory of chance for a given situation. She knows that the chance of _p_ obtaining is 0.999. (If you think _t_ > 0.999, just increase this number, and change the resulting dialogue accordingly.) And her credence in _p_ is 0.999, because her credences track what she knows about chances. She has the following exchange with an assistant.
+
+> ASSISTANT: Will _p_ happen?  
+> MARIE: Probably. It might not, but there is only a one in a thousand chance of that. So _p_ will probably happen.
+
+To their surprise, _p_ does not happen. But Marie did not make any kind of mistake here. Indeed, her answer to assistant's question was exactly right. But if the Lockean theory of belief is right, and false beliefs are mistakes, then Marie did make a mistake. So the Lockean theory of belief is not right.
+
+### Moorean Paradoxes {#lockemoore}
+
+The Lockean says other strange things about Marie. By hypothesis, she believes that _p_ will obtain. Yet she certainly seems sincere when she says it might not happen. So she believes both _p_ and it might not be that _p_. This looks like a Moore-paradoxical utterance, yet in context it seems completely banal.
+
+The same thing goes for Chamira. Does she believe the Battle of Agincourt was in 1415? Yes, say the Lockeans. Does she also believe that it might not have been in 1415? Yes, say the Lockeans, that is why it was rational of her to play Red-True, and it would have been irrational to play Blue-True. So she believes both that something is the case, and that it might not be the case. This seems irrational, but Lockeans insist that it is perfectly consistent with her being a model of rationality.
+
+Back in subsection \@ref(orthodoxmoore) I argued that this kind of thing would be a problem for any kind of orthodox theory. And in some sense all I'm doing here is noting that the Lockean really is a kind of orthodox theorist. But the argument that the Lockean is committed to the rationality of Moore-paradoxical claims doesn't rely on those earlier arguments; it's a direct consequence of their view applied to simple cases like Marie and Chamira.
+
+### Closure and the Lockean Theory {#closure}
+
+The Lockean theory makes an implausible prediction about conjunction.^[This subsection draws on material from my [-@Weatherson2016].] It says that someone can believe two conjuncts, yet actively refuse to believe the conjunction. Here is how Stalnaker puts the point.
+
+> Reasoning in this way from accepted premises to their deductive consequences (_p_, also _q_, therefore _r_) does seem perfectly straightforward. Someone may object to one of the premises, or to the validity of the argument, but one could not intelligibly agree that the premises are each acceptable and the argument valid, while objecting to the acceptability of the conclusion. [@Stalnaker1984 92]
+
+If believing that _p_ just means having a credence in _p_ above the threshold, then this will happen. Indeed, given some very weak assumptions about the world, it implies that there are plenty of triples〈_S_, _A_, _B_〉such that
+
+- _S_ is a rational agent.
+- _A_  and _B_  are propositions.
+- _S_ believes _A_ and believes _B_.
+- _S_ does not believe _A_ ∧ _B_.
+- _S_ knows that she has all these states, and consciously reflectively
+endorses them.
+
+Now one might think, indeed I do think, that such triples do not exist at all. But set that objection aside. If the Lockean is correct, these triples should be everywhere. That's because for any _t_ ∈ (0, 1) you care to pick, triples of the form〈_S_, _C_, _D_〉are very very common.
+
+- _S_ is a rational agent. 
+- _C_ and _D_ are propositions. 
+- _S_'s credence in _C_ is greater than _t_, and her credence in _D_ is greater than _t_.
+- _S_'s credence in _C_ ∧ _D_ is less than _t_.
+- _S_ knows that she has all these states, and reflectively endorses them.
+
+The best arguments for the existence of triples〈_S_, _A_, _B_〉are non-constructive existence proofs. David Christensen [-@Christensen2005] for instance, argues from the existence of the preface paradox to the existence of these triples. But even if these existence proofs work, they don't really prove what the Lockean needs. They don't show that triples satisfying the constraints we associated with〈_S_, _A_, _B_〉are just as common as triples satisfying the constraints we associated with〈_S_, _C_, _D_〉, for any _t_. But if the Lockean were correct, they should be exactly as common.
+
+## Solving the Challenges {#solving}
+
+It's not fair to criticise other theories for their inability to meet a challenge that one's own theory cannot meet. So I'll end this chapter by noting that the six problems I've raised so far for Lockeans are not problems for my interest-relative theory of (rational) belief. I've already discussed the points about correctness in subsection \@ref(mecorrect), and about closure in chapters \@ref(knowledge) and \@ref(ties), and there isn't much to be added. But it's worth saying a few words about the other four problems.
+
+### Coins
+
+I say that a necessary condition of believing that _p_ is a disposition to take _p_ for granted. The rational person will prefer betting on logically weaker rather than logically stronger propositions in the coin case, so they will not take the logically stronger ones for granted. If they did take them for granted, they would be indifferent between the bets. So they will not believe that one of the coin flips after the second will land heads, or even that one of the coin flips after the first will land heads. And that's the right result. The rational person should assign those propositions probability one, but not believe them.
+
+### Games
+
+In the up-down game, if the rational person believed that the other player would play up, they would be indifferent between up and down. But it's irrational to be indifferent between those options, so they wouldn't have the belief. They will think the probability that the other person will play up is one - what else could it be? But they will not believe it on pain of incoherence.
+
+### Arbitrariness
+
+According to IRT, the difference between belief and non-belief is the difference between willingness and unwillingness to take something as given in inquiry. This is far from an arbitrary difference. And it is a difference that supports law-like generalisations. If someone believes that _p_, and believes that given _p_, _A_ is better than _B_, they will prefer _A_ to _B_. This isn't a universal truth; people make mistakes. But nor is it merely a statistical generalisation. Counterexamples are things to be explained, while instances are explained by the underlying pattern.
+
+### Moore
+
+In many ways the guiding aim of this project was to avoid this kind of Moore paradoxicality. So it shouldn't be a surprise that we avoid it here. If someone shouldn't do something because _p_ might be false, that's conclusive evidence that they don't know that _p_. And it's conclusive evidence that either they don't rationally believe _p_, or they are making some very serious mistake in their reasoning. And in the latter case, the reason they are making a mistake is not that _p_ might be false, but that they have a seriously mistaken belief about the kind of choice they are facing. So we can never say that someone knows, or rationally believes, _p_, but their choice is irrational because _p_ might be false.
+
+
+

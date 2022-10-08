@@ -4,7 +4,50 @@ language:
   ui:
     chapter_name: "Chapter "
 rmd_files:
-  html: ["index.Rmd", "html-front.Rmd", "latest-export.md", "references.Rmd"]
-  latex: ["index.Rmd", "latest-export.md","bib-format.Rmd"]
-  epub: ["index.Rmd", "latest-export.md"]
-  docx: ["index.Rmd", "latest-export.md"]
+  html: ["index.Rmd", "html-front.Rmd", 
+  "background.Rmd", 
+  "interests.Rmd",
+  "beliefs.Rmd",
+  "knowledge.Rmd",
+  "inquiry.Rmd",
+  "ties.Rmd",
+  "changes.Rmd",
+  "rationality.Rmd",
+  "evidence.Rmd",
+  "power.Rmd",
+  "references.Rmd"]
+  latex: ["index.Rmd", 
+  "background.Rmd", 
+  "interests.Rmd",
+  "beliefs.Rmd",
+  "knowledge.Rmd",
+  "inquiry.Rmd",
+  "ties.Rmd",
+  "changes.Rmd",
+  "rationality.Rmd",
+  "evidence.Rmd",
+  "power.Rmd",
+  "bib-format.Rmd"]
+  epub: ["index.Rmd", 
+  "background.Rmd", 
+  "interests.Rmd",
+  "beliefs.Rmd",
+  "knowledge.Rmd",
+  "inquiry.Rmd",
+  "ties.Rmd",
+  "changes.Rmd",
+  "rationality.Rmd",
+  "evidence.Rmd",
+  "power.Rmd"
+  ]
+  docx: ["index.Rmd", 
+    "background.Rmd", 
+  "interests.Rmd",
+  "beliefs.Rmd",
+  "knowledge.Rmd",
+  "inquiry.Rmd",
+  "ties.Rmd",
+  "changes.Rmd",
+  "rationality.Rmd",
+  "evidence.Rmd",
+  "power.Rmd"]
