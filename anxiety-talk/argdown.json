@@ -1,0 +1,14 @@
+{
+  "dot": {
+      "graphVizSettings": {
+            "rankdir": "TB"
+            },
+      "statement": {
+            "text": {
+                  fontsize: "16",
+                  bold: "false",
+                  font: "gill sans"
+            }
+      }
+          }
+}

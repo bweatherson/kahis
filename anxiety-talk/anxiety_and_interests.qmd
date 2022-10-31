@@ -1,0 +1,77 @@
+---
+title: "Anxiety and Interests"
+author: "Brian Weatherson"
+format:
+  revealjs: 
+    theme: [white,gill-sans.scss]
+    center: true
+    smaller: true
+mainfont: Gill Sans
+editor: source
+filters:
+  - argdown-filter
+---
+
+---
+
+``` argdown-map
+===
+dot:
+    graphVizSettings:
+        rankdir: LR
+        nodesep: 1
+    statement:
+        title:
+            fontSize: 18
+            bold: false
+            font: gill sans
+        text:
+            fontSize: 18
+            bold: false
+            font: gill sans
+color:
+    colorScheme: 
+      - "#FFFFFF"
+    relationColors:
+        support: "#000000"
+===
+
+Interests matter to knowledge {rank: "r1"}
+    + In Low/No, .+1. knowledge {rank: "r2"}
+    + In High/Cross, .-1. knowledge {rank: "r2"}
+    + Low/No differs from High/Cross only on interests {rank: "r1"}
+```
+
+
+---
+
+``` argdown-map
+===
+dot:
+    graphVizSettings:
+        rankdir: TB
+        nodesep: 1
+    statement:
+        title:
+            fontSize: 16
+            bold: false
+            font: gill sans
+        text:
+            fontSize: 16
+            bold: false
+            font: gill sans
+color:
+    colorScheme: 
+      - "#FFFFFF"
+    relationColors:
+        support: "#000000"
+===
+
+Interests matter to knowledge 
+    + In C1, there is knowledge of the sentence that we really care about yes we care about it we really do
+      + Intuition about knowledge in C1
+    + In C2, there is not knowledge
+      + Intuition about knowledge in C2
+    + C1 and C2 only differ on interests
+```
+
