@@ -14,7 +14,7 @@ filters:
 #  mode: "web-component"
 ---
 
-# Knowledge, Utility and Anxiety
+# Knowledge, Utility, and Anxiety
 
 ## Living the Dream
 
