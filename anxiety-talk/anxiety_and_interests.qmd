@@ -4,17 +4,254 @@ author: "Brian Weatherson"
 format:
   revealjs: 
     theme: [white,gill-sans.scss]
-    center: true
-    smaller: true
+    center: false
+    smaller: false
 mainfont: Gill Sans
 editor: source
 filters:
   - argdown-filter
+#argdown:
+#  mode: "web-component"
 ---
+
+# Knowledge, Utility and Anxiety
+
+## Living the Dream
+
+There are several good arguments that rationality requires that we maximise expected utility.
+
+- Unfortunately, calculating expected utility is much too hard for creatures like us.
+
+## Good News
+
+We don't have to calculate it, we just have to emulate it.
+
+- This point goes back at least to Frank Knight's 1921 discussion of an earlier example of Marshall's.
+
+## Bad News
+
+We can't do that either.
+
+- Try emulating someone who maximises expected utility in traveling salesman problems.
+- You can't do it.
 
 ---
 
-``` argdown-map
+```{r echo=FALSE, cache=TRUE}
+require(tidyverse)
+require(TSP)
+require(maps)
+
+theme_map <- function(base_size=9, base_family="") {
+  require(grid)
+  theme_bw(base_size=base_size, base_family=base_family) %+replace%
+    theme(axis.line=element_blank(),
+          axis.text=element_blank(),
+          axis.ticks=element_blank(),
+          axis.title=element_blank(),
+          panel.background=element_blank(),
+          panel.border=element_blank(),
+          panel.grid=element_blank(),
+          panel.spacing=unit(0, "lines"),
+          plot.background=element_blank(),
+          legend.justification = c(0,0),
+          legend.position = c(0,0)
+    )
+}
+
+theme_set(theme_map())
+
+all_states <- map_data("state") %>% 
+  group_by(region) %>% 
+  tally() %>% 
+  select(state = region)
+
+all_states$code <- c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA",
+                     "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", 
+                     "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", 
+                     "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", 
+                     "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY")
+
+used_states <- 1:49
+
+long_states <- all_states$state[used_states]
+short_states <- all_states$code[used_states]
+
+data("USCA312")
+data("USCA312_GPS")
+
+cities <- as_tibble(as.matrix(USCA312))
+
+city_numbers <- tibble(
+  id = 1:312,
+  thecities = colnames(cities)
+) %>% 
+  mutate(used_city = case_when(str_sub(thecities, -2) %in% short_states  ~ 1,
+                               TRUE ~ 0))
+
+the_city_numbers <- filter(city_numbers, used_city == 1)$id
+
+
+our_cities <- cities %>% 
+  select(all_of(the_city_numbers)) %>% 
+  slice(the_city_numbers)
+
+our_gps <- USCA312_GPS %>% 
+  slice(the_city_numbers) %>% 
+  rowid_to_column()
+
+city_matrix <- as.matrix(our_cities)
+
+rownames(city_matrix) <- filter(city_numbers, used_city == 1)$thecities
+
+## Fine tour
+#tour_line <- solve_TSP(as.TSP(city_matrix), method="farthest_insertion")
+#tour_line <- solve_TSP(as.TSP(city_matrix), method="two_opt", tour = tour_line)
+
+## Not good tour
+#tour_line <- solve_TSP(as.TSP(city_matrix), method="cheapest_insertion", start = 17) # - Very messy
+
+## Generate tour by longitude - really bad
+#tour_line <- TOUR(arrange(our_gps, long)$rowid, tsp = as.TSP(city_matrix))
+
+## Best tour
+load("tour_line.RData")
+
+#tour_line <- TOUR(bad_path, tsp = as.TSP(city_matrix))
+#tour_line <- solve_TSP(as.TSP(city_matrix), method="two_opt", tour = tour_line)
+#tour_length(tour_line)
+
+# Turn tour to map path
+paths <- tribble(
+  ~step, ~property, ~rowid, ~long, ~lat
+)
+
+for (i in 1:nrow(our_gps)){
+  x <- tour_line[i]
+  first_city <- our_gps %>% slice(x)
+  next_city <- our_gps %>% slice(x %% 31)
+  paths <- paths %>%
+    add_row(step = i, property = "from", rowid = first_city$rowid[1], long = first_city$long[1], lat = first_city$lat[1])# %>%
+  #    add_row(step = i, property = "to", rowid = next_city$rowid[1], long = next_city$long[1], lat = next_city$lat[1])
+}
+
+x <- tour_line[1]
+
+paths <- paths %>% add_row(step = 24, property = "from", rowid = our_gps$rowid[x], long = our_gps$long[x], lat = our_gps$lat[x])
+
+
+state_map_data <- map_data("state") %>%
+  #  filter(subregion != "north" | is.na(subregion)) %>%
+  filter(region %in% long_states) 
+
+tour_map <- ggplot(state_map_data, aes(long, lat, group = group)) +
+  geom_polygon(fill = "white", colour = "grey90") + 
+  geom_point(data = our_gps %>% select(long, lat), aes(x = long, y = lat), size = 0.25, inherit.aes = FALSE) +
+#  geom_path(data = paths %>% select(long, lat), aes(x = long, y = lat), inherit.aes = FALSE, colour = "grey30", alpha = 0.5 ) + 
+  coord_quickmap() +
+#  labs(x = paste0("Tour length: ", tour_length(tour_line), " miles.")) +
+  labs(x = "") +
+  theme(axis.title.x = element_text())
+#tour_length(tour_line)
+tour_map
+
+#str_c(our_gps$name, sep = "; ", collapse = "; ")
+```
+
+Task: Find the shortest loop that goes through each of these 257 cities.
+
+## Good News
+
+There is a natural fallback.
+
+- Instead of picking the utility maximising option, we should settle for picking the choice-selection strategy that maximises expected utility given our abilities and computational costs.
+- This gets the right results, more or less, in the traveling salesman problem.
+
+## Bad News
+
+As L. J. Savage pointed out long ago, this leads to a regress.
+
+- Just like it's too hard to calculate what choice maximises expected utility, it's too hard to calculate which choice-selection strategy maxises expected utility.
+
+## Good News
+
+You don't have to calculate that, you just have to emulate someone who does.
+
+- And maybe you can, sort of, more or less, at least when the gods are smiling on you.
+
+## How Do You Do It?
+
+With a bunch of heuristics.
+
+- If you like these heuristics, you call them **knacks**.
+- If you don't like them, they are **biases**.
+- I like them, mostly, so knacks they are.
+
+## One Possible Knack
+
+| Well I don't know why I came here tonight 
+| I've got the feeling that something ain't right 
+| I'm so scared in case I fall off my chair 
+| And I'm wondering how I'll get down the stairs
+
+![&nbsp;](stuck.png)
+
+## Knowledge and Anxiety
+
+Sometimes you should check because something might not be right.
+
+- In some of those cases, you'll have epistemic anxiety, a feeling that something ain't right.
+- In most (all?) of the others, you should have such a feeling.
+- Knowledge requires that one not have, and ought not have, such a feeling.
+
+---
+
+When one ought to check is a function of one's interests.
+
+- Example: A and B are both walking across campus to get to my talk. They both looked up the route before leaving, but both of them have been known to forget turns.
+- A doesn't really care about being late for my talk, and is happy to be walking across a pretty campus, and wouldn't feel bad if they missed a turn and saw more of it.
+- B does care a lot about being here.
+
+---
+
+When one ought to check is a function of one's interests.
+
+- B should (and probably will) have some anxiety about the route, so should check, so doesn't know that they are going the right way.
+- A won't feel anxiety, and shouldn't, and so (I say) knows the way, assuming they have a true belief about the way produced by and based in an appropriately reliable source.
+
+## Belief
+
+Belief, in the sense most relevant to epistemology, requires two things.
+
+1. Settledness, which requires the absence of epistemic anxiety.
+2. Willingness to use as a step in reasoning.
+
+## Knowledge
+
+Knowledge is appropriate belief.
+
+- So knowledge is (inter alia) appropriate settledness.
+- Since appropriate settledness is interest-relative, so is knowledge.
+
+
+# High Stakes
+
+---
+
+A common argument for interest-relativity starts with two cases. In each case, the protagonist has strong evidence that *p*, and this evidence is not misleading in any way; indeed, *p* is true.
+
+Low Stakes/No Check
+:    In this case (Low/No), protagonist has little riding on whether *p*, and they don't check whether it is true.
+
+High Stakes/Cross Check
+:    If this case (High/Cross), protagonist has a lot riding on whether *p*, and they check whether it is true before acting.
+
+
+
+---
+
+
+```{.argdown-map #fig:first-map}
 ===
 dot:
     graphVizSettings:
@@ -30,48 +267,162 @@ dot:
             bold: false
             font: gill sans
 color:
-    colorScheme: 
-      - "#FFFFFF"
-    relationColors:
-        support: "#000000"
-===
-
-Interests matter to knowledge {rank: "r1"}
-    + In Low/No, .+1. knowledge {rank: "r2"}
-    + In High/Cross, .-1. knowledge {rank: "r2"}
-    + Low/No differs from High/Cross only on interests {rank: "r1"}
-```
-
-
----
-
-``` argdown-map
-===
-dot:
-    graphVizSettings:
-        rankdir: TB
-        nodesep: 1
-    statement:
-        title:
-            fontSize: 16
-            bold: false
-            font: gill sans
-        text:
-            fontSize: 16
-            bold: false
-            font: gill sans
-color:
-    colorScheme: 
+    colorScheme:
       - "#FFFFFF"
     relationColors:
         support: "#000000"
 ===
 
 Interests matter to knowledge 
-    + In C1, there is knowledge of the sentence that we really care about yes we care about it we really do
-      + Intuition about knowledge in C1
-    + In C2, there is not knowledge
-      + Intuition about knowledge in C2
-    + C1 and C2 only differ on interests
+    + In Low/No, .+1. knowledge 
+    + In High/Cross, .-1. knowledge 
+    + Low/No differs from High/Cross only on interests 
 ```
 
+## Background
+
+But why do we accept the knowledge claims?
+
+- In the simplest form, it's just because of intuition.
+- Let's add that to the graph.
+
+
+---
+
+```{.argdown-map #fig:second-map}
+
+===
+dot:
+    graphVizSettings:
+        rankdir: TB
+        nodesep: 0.5
+    statement:
+        title:
+            fontSize: 18
+            bold: false
+            font: gill sans
+        text:
+            fontSize: 18
+            bold: false
+            font: gill sans
+color:
+    colorScheme:
+      - "#FFFFFF"
+    relationColors:
+        support: "#000000"
+===
+
+Interests matter to knowledge 
+    + In Low/No, .+1. knowledge 
+      + Intuition about knowledge
+    + In High/Cross, .-1. knowledge 
+      + Intuition about non-knowledge
+    + Only interests differ
+```
+
+---
+
+```{.argdown-map #fig:third-map}
+
+===
+dot:
+    graphVizSettings:
+        rankdir: TB
+        nodesep: 0.5
+    statement:
+        title:
+            fontSize: 18
+            bold: false
+            font: gill sans
+        text:
+            fontSize: 18
+            bold: false
+            font: gill sans
+color:
+    colorScheme:
+      - "#FFFFFF"
+    relationColors:
+        support: "#000000"
+===
+
+Interests matter to knowledge 
+    + In Low/No, .+1. knowledge 
+      + Intuition about knowledge
+    + In High/Cross, .-1. knowledge 
+      + Intuition about non-knowledge
+    + Only interests differ
+```
+
+Three problems:
+
+1. The 'only interests differ' step is clearly wrong.
+2. The intuitions about knowledge are dodgy.
+3. Low/High aren't the best pair of cases to use.
+
+## No Difference?
+
+Here's one other difference: they behave differently!
+
+- Either they have different internal states or they don't.
+- If they do, those are a salient difference beyond interests.
+- If they don't, then one of them is practically irrational, which is also a salient difference.
+
+## A Better Pair
+
+Same background: In each case, the protagonist has strong evidence that *p*, and this evidence is not misleading in any way; indeed, *p* is true.
+
+Low Stakes/No Check
+:    In this case (Low/No), protagonist has little riding on whether *p*, and they don't check whether it is true.
+
+High Stakes/No Check
+:    If this case (High/No), protagonist has a lot riding on whether *p*, but they don't check whether it is true. This seems (to most people) practically irrational.
+
+## Low/No
+
+We don't need an intuition here.
+
+- Low/No can be set up so if anti-scepticism is true, it is a case of knowledge.
+- That is, knowledge follows from anti-sceptical principles.
+
+## High/No
+
+The argument here relies on a principle.
+
+- If protagonist knew that *p*, it would be rational to not check.
+- It is not rational to not check.
+
+Let's put all that into the messy graph.
+
+---
+
+```{.argdown-map #fig:fourth-map}
+
+===
+dot:
+    graphVizSettings:
+        rankdir: TB
+        nodesep: 0.5
+    statement:
+        title:
+            fontSize: 18
+            bold: false
+            font: gill sans
+        text:
+            fontSize: 18
+            bold: false
+            font: gill sans
+color:
+    colorScheme:
+      - "#FFFFFF"
+    relationColors:
+        support: "#000000"
+===
+
+Interests matter to knowledge 
+    + In Low/No, .+1. knowledge 
+      + Anti-sceptical principle
+    + In High/No, .-1. knowledge 
+      + Knowledge-action principle
+      + Acting is irrational in High/No
+    + Only interests differ
+```
