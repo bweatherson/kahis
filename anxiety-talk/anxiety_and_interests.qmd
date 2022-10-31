@@ -426,3 +426,103 @@ Interests matter to knowledge
       + Acting is irrational in High/No
     + Only interests differ
 ```
+
+The top right of the graph is where all the action is now; let's spell that out.
+
+## The Key Argument about High/No
+
+1. If protagonist knows that *p*, it is rational to act without checking.
+2. It is not rational to act without checking.
+3. So, protagonist does not know that *p*.
+
+How might reasoning about anxiety affect _that_ argument. I'll go over three reasons that are prima facie problems, and argue none of them work.
+
+## Big Picture
+
+- Protagonist should feel anxiety in this case.
+- They don't, and that's irrational.
+- But maybe it's not the kind of irrationality that interest-relative theories need.
+
+## First Objection
+
+- P2 is false, at least in the needed sense.
+- The failure here is one of practical rationality, and interest-relative theories need there to be a failure of epistemic rationality.
+
+**Reply**
+
+This is only an objection to the version that starts with intuitions, not the one that starts with principles. We do assume here that the irrationality is practical.
+
+## Second Objection
+
+- P2 is false, because while protagonist does something bad, they aren't _irrational_. Maybe they are following a bad principle, or lacking something that's usually a virtue.
+
+**Replies**
+
+1. Given the picture of knowledge and rationality I started with, this can't be right. Not feeling anxiety isn't an alternative to practical irrationality, it is a form of practical irrationality.
+2. No reason to think it's bad to rely on *p* when one knows that *p*.
+
+## Third Objection
+
+- P1 is false, because there are other reasons it could be wrong to rely on *p* even if one knows it. For example, it could be irrelevant.
+
+**Reply**
+
+It doesn't just seem irrational to act on *p* in these cases, it seems irrational to act on *p* because it might be false. That's the kind of error that knowledge protects you from.
+
+# Low Stakes Interests
+
+## Three Cases
+
+1. Low stakes/long odds
+2. Safety and interests^[Argument due to Nilanjan Das]
+3. Anti-circularity
+
+## Long Odds
+
+Protagonist has excellent evidence that *p*, and *p* is actually true, no funny business etc.
+
+- Protagonist has to make a decision which turns on *p* and will cost them $20 if they get it wrong.
+- To confirm *p*, they have to look up from doomscrolling and look out the window.
+
+## Argument
+
+1. They should look out the window.
+2. If they know *p*, it's fine to keep doomscrolling.
+3. So they don't know *p*.
+4. But if they didn't care about the $20, they would know *p*.
+5. So knowledge is interest-relative.
+
+## Safety
+
+A and B both read that *p* in a history book that is, and is taken by them to be, highly reliable. It says *p* because *p*, and they believe it because it says it.
+
+- A likes reading books in paperback, and many other books published on paperback falsely say that *p* is false.
+- B likes reading books on Kindle, and all the books on Kindle that mention *p* get it right.
+- Neither A nor B is super good at telling reliable from unreliable history books.
+
+## Argument
+
+1. A's belief is unsafe, and not knowledge, while B's belief is safe.
+2. The only relevant difference between them concerns interests.
+3. So interests matter to knowledge.
+
+## Circularity
+
+C is just like B, but they have taken an interest in how reliable this particular book is.
+
+- If they knew that *p*, they could reason that since this book says *p*, and *p*, that's evidence of its reliability.
+- They can't reason that way, so they don't know that *p*.
+- But the only difference between B and C concerns interests.
+
+## Payoffs
+
+If *any* of these three arguments work, two things happen that are relevant to the broader debate.
+
+1. We have reason to think that high stakes anxiety isn't a decisive consideration in debates about interest-relativity.
+2. Burden of proof arguments, which say we should reject an interest-relative explanation of a case unless absolutely forced into it, all fail.
+
+## Conclusion
+
+- Anxiety is a helpful way of thinking about constraints on knowledge.
+- Appropriate absence of epistemic anxiety is necessary for knowledge.
+- From this, plus some anti-sceptical principles and some very plausible judgments about practical rationality, we can conclude that knowledge is interest-relative.
