@@ -15,7 +15,7 @@ output:
     keep_tex: yes
   bookdown::gitbook:
     md_extensions: +example_lists+fancy_lists+startnum+line_blocks+pipe_tables
-    split_bib: no
+    split_bib: yes
 #    includes:
 #      after_body: disqus.html
     number_sections: yes
