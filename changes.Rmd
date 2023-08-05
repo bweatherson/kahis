@@ -4,11 +4,11 @@ The version of IRT I'm endorsing has enough in common with more familiar version
 
 > [A] situation may arise $\dots$ when we can truly affirm an ‘ugly conjunction’ like:  
 >  
->  \> X didn’t (have enough evidence to) know P at t but does at t\* and has exactly the same body of P-relevant evidence at t\* as at t.  
+> > X didn’t (have enough evidence to) know P at t but does at t\* and has exactly the same body of P-relevant evidence at t\* as at t.  
 >  
 > Such a remark seems drastically foreign to the concept of knowledge we actually have. It seems absurd to suppose that a thinker can acquire knowledge without further investigation simply because his practical interests happen so to change as to reduce the importance of the matter at hand. Another potential kind of ugly conjunction is the synchronic case for different subjects:  
 >   
->  \> X knows that P but Y does not, and X and Y have exactly the same body of P-relevant evidence.  
+> > X knows that P but Y does not, and X and Y have exactly the same body of P-relevant evidence.  
 >   
 > when affirmed purely because X and Y have sufficiently different practical interests. IRI, as we noted earlier, must seemingly allow that instances of such a conjunction can be true. [@Wright2018 368]  
 
@@ -121,7 +121,7 @@ On the face of it, that's truth-connected. It says knowledge requires strong evi
 
 And that really can't be right. Or, at least, it can't be right unless you believe the JTB theory of knowledge. If the JTB theory is false, then there are bound to be counterexamples to the principles that IRT is inconsistent with. So consider Wright's 'ugly conjunction'.
 
- \> X didn’t (have enough evidence to) know P at t but does at t\* and has exactly the same body of P-relevant evidence at t\* as at t. [@Wright2018 368]
+ > X didn’t (have enough evidence to) know P at t but does at t\* and has exactly the same body of P-relevant evidence at t\* as at t. [@Wright2018 368]
 
 If evidence goes primarily to justification, then similarity of evidence at t and t\* should just tell us that X is rational in believing P at both times or neither. Let's say that it's both times. Then as long as one could be in a JTB-but-not-knowledge at t and not at t\* this conjunction should be possible. So here's one way that could happen.
 

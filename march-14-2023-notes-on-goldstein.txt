@@ -1,0 +1,3 @@
+See page 12 of https://philpapers.org/archive/GOLOKW.pdf for discussion of something like red-green game.
+He endorses a super knowledge version
+Note the disjunctive version of the game that is discussed there

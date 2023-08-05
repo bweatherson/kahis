@@ -15,7 +15,7 @@ output:
     keep_tex: yes
   bookdown::gitbook:
     md_extensions: +example_lists+fancy_lists+startnum+line_blocks+pipe_tables
-    split_bib: no
+    split_bib: yes
 #    includes:
 #      after_body: disqus.html
     number_sections: yes
@@ -31,7 +31,7 @@ output:
         after: |
           <li><a href="https://bookdown.org" target="_blank">Made with bookdown</a></li>
 cover-image: "tree.jpg"
-bibliography: "CollBib.bib"
+bibliography: "kahis-bib.bib"
 biblio-style: philreview
 link-citations: yes
 description: "A defence of an interest-relative theory of knowledge"
@@ -53,7 +53,7 @@ Interest-relative epistemologies all start in roughly the same way. A big part o
 
 But there are three other respects in which the view I'm going to set out and defend in this book is very different from the view I set out in older papers.
 
-I used to identify the practical limits on knowledge with cases where relying on the purported knowledge would get the wrong answer. I focussed, that is, on the outputs of inquiry. Knowledge goes away if relying on it would lead one to make a mistake. I now think I was looking at the wrong end of inquiry. Knowledge goes away if the thinker starts conducting an inquiry where the purported knowledge is an inappropriate starting point, and inappropriate for the special reason that it might be false. Now one way we can tell that something is a bad starting point is that starting there will mean we end up at the wrong place. But it's not the only way. Sometimes a bad starting point will lead to the right conclusion for the wrong reasons. As the Nyāya philosophers argued, rational inquiry starts with knowledge. If it would be irrational to start this inquiry with a particular belief, that belief isn't knowledge.
+I used to identify the practical limits on knowledge with cases where relying on the purported knowledge would get the wrong answer. I focused, that is, on the outputs of inquiry. Knowledge goes away if relying on it would lead one to make a mistake. I now think I was looking at the wrong end of inquiry. Knowledge goes away if the thinker starts conducting an inquiry where the purported knowledge is an inappropriate starting point, and inappropriate for the special reason that it might be false. Now one way we can tell that something is a bad starting point is that starting there will mean we end up at the wrong place. But it's not the only way. Sometimes a bad starting point will lead to the right conclusion for the wrong reasons. As the Nyāya philosophers argued, rational inquiry starts with knowledge. If it would be irrational to start this inquiry with a particular belief, that belief isn't knowledge.
 
 Not all inquiries are practical inquiries, but many are. And practical inquiries are usually going to be at the center of attention in this book. But what is someone trying to figure out when they conduct a practical inquiry? I used to think that they were trying to figure out which option maximised expected utility, and to a first approximation identified knowledge with those things one could conditionalise on without changing the option that maximised expected utility. As noted in the previous paragraph, I no longer think that we can identify knowledge with what doesn't change our verdicts. But more importantly, I no longer think that expected utility maximisation is as central to practical inquiry as I once did. There are some theoretical reasons from game theory that raise some doubts about expected utility maximisation. Weak dominance reasoning is part of our theory of rational choice, and can't be modeled as expected utility maximisation. Perhaps some kinds of equilibrium seeking are parts of practical inquiry, and can't be modeled as expected utility maximisation. But there are also very practical reasons to think that practical inquiry doesn't aim at expected utility maximisation. When there are a lot of very similar options - think about selecting a can from a supermarket shelf - and it's more trouble than it's worth to figure out which of them maximises expected utility, it's best to ignore the differences between them and just pick. As I'll argue in chapter \@ref(ties), this makes a big difference to how interests and knowledge interact.
 

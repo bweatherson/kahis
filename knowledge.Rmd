@@ -18,10 +18,10 @@ A practical inquiry can often be represented by the kind of decision table that 
 
 To see this, let's start with an example. Professor Dec is teaching introductory decision theory to her undergraduate class. She is trying to introduce the notion of a dominant choice. So she introduces the following problem, with two states, *S*1 and *S*2, and two choices, *C*1 and *C*2, as is normal for introductory problems.
 
-  &nbsp;      *S*1$       *S*2
+  &nbsp;      *S*1         *S*2
 ----------- ------------	--------
- *C*~1~$       -$200        $1000
- *C*~2~$       -$100        $1500
+ *C*~1~       -$200        $1000
+ *C*~2~       -$100        $1500
 
 She's hoping that the students will see that *C*1 and *C*2 are bets, but *C*2 is clearly the better bet. If *S*1 is actual, then both bets lose, but *C*2 loses less money. If *S*2 is actual, then both bets win, but *C*2 wins more. So *C*2 is better. That analysis is clearly wrong if the state is causally dependent on the choice, and controversial if the states are evidentially dependent on the choices. But Professor Dec has not given any reason for the students to think that the states are dependent on the choices in either way, and in fact the students don't worry about that kind of dependence.
 
